@@ -2,72 +2,81 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <div  class="top-header flexbox-container">
-                <div class="left-logo flexbox-container">
-                    <img src="#" alt="Header Logo"/>
-                </div>
-                <div class="right-menu flexbox-container">
-                    <div class="menu-item"><a href="#">Header Link One</a></div>
-                    <div class="menu-item"><a href="#">Header Link Two</a></div>
-                    <div class="menu-item"><a href="#">Header Link Three</a></div>
+            <div  class="top-header flex-container">
+                <div class="menu-top flex-container">
+                    <div class="left-logo flex-container">
+                        <div class="logo">James Walbridge</div>
+                    </div>
+                    <div class="right-menu flex-container">
+                        <div class="menu-item"><a href="#">About</a></div>
+                        <div class="menu-item"><a href="#">Portfolio</a></div>
+                        <div class="menu-item"><a href="#">Contact</a></div>
+                    </div>
                 </div>
             </div>
         </header>
 
-        <div class="flex-container">
+        <div class="hero-main flex-container">
             <div class="hero-left">
                 <h1>I'm James, A Web Developer.</h1>
                 <div> This website is mainly a refresher on some more modern technology such as flexbox that wasn't around when I started my journey. </div>
+                <button class="cta-button">Sign up</button>
             </div>
             <div class="hero-right">
-                <img src="#" alt="Placeholder Image"/>
+                <img width="500px;"src="https://www.zdnet.com/a/img/resize/e944e055c8104236467fb8b85e08c28bfa39c5c5/2021/07/16/cd214d82-b5c6-42be-8989-efa119b05443/web-development-shutterstock-696061426.jpg?width=770&height=578&fit=crop&auto=webp" alt="Placeholder Image"/>
             </div>
         </div>
 
-        <div class="information-highlight">
-            <h2>Some information about me.</h2>
-            <div class="flexbox-container">
+        <div class="information-highlight flex-container">
+            <h1>My Expertise</h1>
+            <div class="about-information flex-container">
                 <div class="about-me-box">
-                    <div class="image-placeholder"></div>
-                    <span>I'm 34 years old.</span>
+                    <div class="image-placeholder"><img src="https://s.w.org/style/images/about/WordPress-logotype-simplified.png"/></div>
+                    <span>WordPress.</span>
                 </div>
                 <div class="about-me-box">
-                    <div class="image-placeholder"></div>
-                    <span>I've got two kids.</span>
+                    <div class="image-placeholder"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/WooCommerce_logo.svg/1200px-WooCommerce_logo.svg.png"/></div>
+                    <span>WooCommerce.</span>
                 </div>
                 <div class="about-me-box">
-                    <div class="image-placeholder"></div>
-                    <span>I have a wonderful wife.</span>
+                    <div class="image-placeholder"><img src="https://static.cdnlogo.com/logos/s/88/shopify.svg"/></div>
+                    <span>Shopify.</span>
                 </div>
                 <div class="about-me-box">
-                    <div class="image-placeholder"></div>
-                    <span>I own two E-Commerce businesses</span>
+                    <div class="image-placeholder"><img src="data:image/png;base64,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"/></div>
+                    <span>BigCommerce.</span>
                 </div>
             </div>
         </div>
 
-        <div class="quote-box">
-            <div class="inspiring-quote">
-                "Failure is simply the opportunity to begin again, this time more intelligently."
-            </div>
-            <div class="signature-box">
-                -Henry Ford
+        <div class="quote-box flex-container">
+            <div class="inspiring-quote flex-container">
+                <p>"Failure is simply the opportunity to begin again, this time more intelligently."</p>
+                <div class="signature-box">
+                    -Henry Ford
+                </div>
             </div>
         </div>
 
         <footer>
-            <div class="footer-cta flexbox-container">
-                <div class="cta-left">
-                    <h3>Call to Action! It's time!</h3>
-                    <div>Sign up for our product by clicking that button right over there!</div>
-                </div>
-                <div class="cta-right">
-                    <button class="cta-button">Sign up</button>
+            <div class="cta-wrapper flex-container">
+                <div class="footer-cta flex-container">
+                    <div class="cta-left">
+                        <h3>Call to Action! It's time!</h3>
+                        <div>Sign up for our product by clicking that button right over there!</div>
+                    </div>
+                    <div class="cta-right">
+                        <button class="cta-button">Sign up</button>
+                    </div>
                 </div>
             </div>
+          
             <div class="bottom-copyright">Copyright © James Walbridge - 2022</div>
         </footer>
     </body>
